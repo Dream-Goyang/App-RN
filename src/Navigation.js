@@ -3,6 +3,7 @@ import {Button,View} from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import {NavigationContainer} from "@react-navigation/native";
 import LoginScreen from "./LoginScreen";
+import SightScreen from "./SightScreen";
 
 function HomeScreen({navigation}){
     return(
@@ -29,6 +30,7 @@ export default function App(){
                 <Drawer.Screen name="Home" component={HomeScreen}/>
                 <Drawer.Screen name="Notifications" component={NotificationScreen}/>
                 <Drawer.Screen name="Login" component={LoginScreen}/>
+                <Drawer.Screen name="Sight" component={SightScreen}/>
             </Drawer.Navigator>
         </NavigationContainer>
     );
