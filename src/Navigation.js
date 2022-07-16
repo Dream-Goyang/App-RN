@@ -1,9 +1,11 @@
 import * as React from "react";
 import {Button,View} from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import {NavigationContainer} from "@react-navigation/native";
+import {NavigationContainer, StackActions} from "@react-navigation/native";
 import LoginScreen from "./LoginScreen";
-import SightScreen from "./SightScreen";
+import SightScreenMain from "./SightScreenMain";
+import SightScreenSub from "./SightScreenSub";
+
 
 function HomeScreen({navigation}){
     return(
@@ -30,7 +32,8 @@ export default function App(){
                 <Drawer.Screen name="Home" component={HomeScreen}/>
                 <Drawer.Screen name="Notifications" component={NotificationScreen}/>
                 <Drawer.Screen name="Login" component={LoginScreen}/>
-                <Drawer.Screen name="Sight" component={SightScreen}/>
+                <Drawer.Screen name="SightM" component={SightScreenMain}/>
+                <Drawer.Screen name="SightS" component={SightScreenSub}/>
             </Drawer.Navigator>
         </NavigationContainer>
     );

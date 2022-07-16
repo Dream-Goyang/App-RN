@@ -7,9 +7,9 @@ export const buttonStyles=StyleSheet.create({
     sightButton:{
         alignItems: 'center',
         justifyContent: 'center',
-        width:Width-100,
+        width:Width-70,
         height:65,
-        marginTop:10,
+        marginTop:50,
         marginLeft:3,
         paddingLeft:15,
         paddingTop:2,
@@ -30,10 +30,8 @@ export const buttonStyles=StyleSheet.create({
 
 export const titleStyles=StyleSheet.create({
     lightText:{
-        fontSize: 17,
+        fontSize: 18,
         lineHeight: 30,
-        padding:0,
-        margin:0,
         fontWeight: 'lighter',
         letterSpacing: 0.25,
         color: 'black',
@@ -41,8 +39,6 @@ export const titleStyles=StyleSheet.create({
     boldText:{
         fontSize: 20,
         lineHeight: 30,
-        padding:0,
-        margin:0,
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'black',
@@ -50,10 +46,58 @@ export const titleStyles=StyleSheet.create({
 });
 
 export const imageStyles=StyleSheet.create({
-    image:{
-        alignSelf:'center',
-        resizeMode:'contain',
-        width: Width,
+    character:{
+        resizeMode:'cover',
+        width: Width-280,
         height: 100,
+    },
+    image:{
+        resizeMode:'contain',
+        width: Width-50,
+        height: 200,
+        borderColor: '#E7E7E7',
+        borderWidth:5,
+    }
+});
+
+export const HorizonLine=StyleSheet.create({
+    line:{
+        alignSelf: 'center',
+        width: Width-50,
+        height:2,
+        margin: 10,
+        backgroundColor:'#E7E7E7',
+    }
+});
+
+export const SightStyles=StyleSheet.create({
+    rectangleN:{
+        width: Width-50,
+        padding: 16,
+        marginTop: 35,
+        marginBottom: 15,
+        backgroundColor: '#E7E7E7',  
+    },
+    rectangleD: {
+        width: Width-50,
+        marginTop: 35,
+        backgroundColor: '#E7E7E7', 
+    },
+    name:{
+        alignSelf: 'center',
+        fontSize: 20,
+        fontWeight: '600',
+        lineHeight: 21,
+        letterSpacing: 0.25,
+        color: 'black',
+    },
+    Detail:{
+        padding: 20,
+        alignSelf: 'flex-start',
+        fontSize: 20,
+        fontWeight: '600',
+        lineHeight: 30,
+        letterSpacing: 0.25,
+        color: 'black',
     }
 });
