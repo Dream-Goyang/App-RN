@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
 import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from './components/SightStyles';
 
-const SightScreenMain = ({navigation}) => {
+const SightScreen = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent:'flex-start', marginTop: 10}}>
@@ -22,18 +22,14 @@ const SightScreenMain = ({navigation}) => {
         
       <Text style={HorizonLine.line}></Text>
 
-      <View style={SightStyles.rectangleN}>
-      <Text style={SightStyles.name}>일산 호수공원</Text>
-      </View>
+      <Image source={require('../assets/Map.png')} style={imageStyles.image3}/>
 
-      <Image source={require('../assets/Sight_pic.png')} style={imageStyles.image}/>
-
-      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('관광지 소개')}>     
-      <Text style={buttonStyles.buttonText}>관광지 소개</Text>
+      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('고양이 찾기')}>     
+      <Text style={buttonStyles.buttonText}>고양이 찾기</Text>
       </TouchableOpacity>
 
     </SafeAreaView>
   );
 };
 
-export default SightScreenMain;
+export default SightScreen;

@@ -51,13 +51,32 @@ export const imageStyles=StyleSheet.create({
         width: Width-280,
         height: 100,
     },
+    character2:{
+        resizeMode:'contain',
+        width: Width-350,
+        height: 80,
+    },
     image:{
         resizeMode:'contain',
         width: Width-50,
         height: 200,
         borderColor: '#E7E7E7',
         borderWidth:5,
-    }
+    },
+    image2:{
+        resizeMode:'contain',
+        width: Width-50,
+        height: 300,
+        borderColor: '#E7E7E7',
+        borderWidth:5,
+    },
+    image3:{
+        resizeMode:'contain',
+        width: Width-50,
+        height: 350,
+        borderColor: '#E7E7E7',
+        borderWidth: 2,
+    },
 });
 
 export const HorizonLine=StyleSheet.create({
@@ -96,7 +115,7 @@ export const SightStyles=StyleSheet.create({
         alignSelf: 'flex-start',
         fontSize: 20,
         fontWeight: '600',
-        lineHeight: 30,
+        lineHeight: 32,
         letterSpacing: 0.25,
         color: 'black',
     }

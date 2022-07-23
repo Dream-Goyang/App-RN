@@ -3,8 +3,10 @@ import {Button,View} from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import {NavigationContainer, StackActions} from "@react-navigation/native";
 import LoginScreen from "./LoginScreen";
+import SightScreen from "./SightScreen";
 import SightScreenMain from "./SightScreenMain";
 import SightScreenSub from "./SightScreenSub";
+import GameScreen from "./GameScreen";
 
 
 function HomeScreen({navigation}){
@@ -32,8 +34,10 @@ export default function App(){
                 <Drawer.Screen name="Home" component={HomeScreen}/>
                 <Drawer.Screen name="Notifications" component={NotificationScreen}/>
                 <Drawer.Screen name="Login" component={LoginScreen}/>
-                <Drawer.Screen name="SightM" component={SightScreenMain}/>
-                <Drawer.Screen name="SightS" component={SightScreenSub}/>
+                <Drawer.Screen name="명소 보러가기" component={SightScreen} />
+                <Drawer.Screen name="명소 보러가기_2" component={SightScreenMain}/>
+                <Drawer.Screen name="관광지 소개" component={SightScreenSub}/>
+                <Drawer.Screen name="고양이 찾기" component={GameScreen}/>
             </Drawer.Navigator>
         </NavigationContainer>
     );
