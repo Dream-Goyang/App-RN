@@ -1,0 +1,25 @@
+//drawer navigation
+cd walkgy/node_modules
+npm install @react-navigation/drawer
+expo install react-native-gesture-handler 
+expo install react-native-reanimated
+
+//babel.config.js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: [
+      [
+        "module-resolver",
+        {
+          extensions: [".tsx", ".ts", ".js", ".json"],
+        },
+      ],
+      "react-native-reanimated/plugin",
+    ],
+  };
+};
+
+//reset cache
+expo r -c
