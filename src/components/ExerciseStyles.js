@@ -28,31 +28,32 @@ export const buttonStyles=StyleSheet.create({
         marginLeft:3,
         paddingLeft:15,
         paddingTop:2,
-        borderRadius:20,
+        borderRadius:10,
         backgroundColor:'#06ae7a',
         color:'#000000',
         borderWidth:1,
         borderColor:'transparent',
     },
-    noncheckButton:{ //marginRight(Left): 15, justifyContent:'flex-start(end)' 
+    noncheckButton:{  
+        resizeMode:'stretch',
         alignItems: 'center',
         width:(Width-50)*0.5,
         height: 70,
         marginTop:50,
-        paddingLeft:15,
-        paddingTop:2,
-        backgroundColor:'#dde9e5',
+        paddingTop: 20,
+        backgroundColor:'#eaefed',
     },
     checkButton:{
+        resizeMode:'stretch',
         alignItems: 'center',
         width:(Width-50)*0.5,
         height: 70,
         marginTop:50,
-        paddingLeft:15,
-        paddingTop:2,
-        backgroundColor:'#bbfae5',
+        paddingTop:20,
+        backgroundColor:'#cdede3',
     },
     buttonText:{
+        marginRight:15,
         fontSize: 20,
         lineHeight: 21,
         fontWeight: 'bold',
@@ -65,7 +66,7 @@ export const titleStyles=StyleSheet.create({
     lightText:{
         fontSize: 18,
         lineHeight: 30,
-        fontWeight: 'lighter',
+        fontWeight: "250",
         letterSpacing: 0.25,
         color: 'black',
     },
@@ -79,11 +80,16 @@ export const titleStyles=StyleSheet.create({
 });
 
 export const imageStyles=StyleSheet.create({
-    character:{
-        resizeMode:'cover',
-        width: Width-280,
-        height: 100,
-    }
+    exercisecharacter:{
+        resizeMode:'contain',
+        width: Width-300,
+        height: 80,
+    },
+    winkcharacter:{
+        resizeMode:'stretch',
+        width: Width-330,
+        height: 50,
+    },
 });
 
 export const HorizonLine=StyleSheet.create({
@@ -97,16 +103,16 @@ export const HorizonLine=StyleSheet.create({
     rankline:{
         alignSelf: 'center',
         width: Width-50,
-        height:5,
-        margin: 10,
+        height:2,
+        margin:20,
         backgroundColor:'#06ae7a',
     },
     divideline:{
         alignSelf: 'center',
         width: Width-50,
-        height:5,
+        height:2,
         margin: 20,
-        backgroundColor:'#83ab9e',
+        backgroundColor:'#b8d8ce',
     },
 });
 
@@ -124,37 +130,38 @@ export const rankStyles=StyleSheet.create({
     chart:{
         alignItems: 'flex-end',
         width: Width-50,
-        height: 850,
+        height: Height-280,
+        marginTop:20,
         margin: 10,
-        backgroundColor:'#bbfae5'
+        backgroundColor:'#cdede3'
     },
     subchart:{
         alignItems: 'center',
         justifyContent: 'center',
-        width:Width-70,
-        height:50,
+        width:Width-80,
+        height:Height-765,
         marginTop:50,
         marginLeft:3,
-        paddingLeft:15,
-        paddingTop:2,
+        paddingLeft:10,
+        paddingTop:5,
         backgroundColor: 'white',
     },
     titleText:{
-        fontSize: 20,
+        fontSize: 23,
         lineHeight: 30,
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'black'
     },
     mainText:{
-        fontSize: 30,
+        fontSize: 25,
         lineHeight: 30,
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'black'
     },
     subText:{
-        fontSize: 17,
+        fontSize: 18,
         lineHeight: 30,
         fontWeight: 'bold',
         letterSpacing: 0.25,
@@ -188,21 +195,23 @@ export const circleStyles=StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: Math.round(Width+Height)/2,
-        width: Width*0.5,
-        height: Width*0.5,
+        width: Width*0.6,
+        height: Width*0.6,
         backgroundColor: 'white',
         shadowColor: '#06ae7a',
-        shadowRadius: 20,
+        shadowOffset: {width: Width*0.6, height:Width*0.6},
+        shadowRadius: 100,
+        marginTop:100
     },
     titleText:{
         fontSize: 18,
         lineHeight: 30,
-        fontWeight: "650",
+        fontWeight: "800",
         letterSpacing: 0.25,
         color: 'black'
     },
     numText:{
-        fontSize: 40,
+        fontSize: 45,
         lineHeight: 60,
         fontWeight: '900',
         letterSpacing: 0.25,
@@ -213,7 +222,8 @@ export const circleStyles=StyleSheet.create({
         lineHeight: 30,
         fontWeight: '600',
         letterSpacing: 0.25,
-        color: 'black'
+        color: 'black',
+        marginBottom:8
     }
 })
 
