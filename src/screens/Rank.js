@@ -5,7 +5,7 @@ const ExerciseMain = ({navigation}) => {
     const today = new Date();
 
     return(
-        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10}}>
+        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
             
             <View style={{alignItems:'space-around', flexDirection: 'row'}}>
        
