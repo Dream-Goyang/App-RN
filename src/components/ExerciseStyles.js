@@ -197,7 +197,7 @@ export const circleStyles=StyleSheet.create({
         borderRadius: Math.round(Width+Height)/2,
         width: Width*0.6,
         height: Width*0.6,
-        backgroundColor: 'white',
+        backgroundColor: '#cdede3',
         shadowColor: '#06ae7a',
         shadowOffset: {width: Width*0.6, height:Width*0.6},
         shadowRadius: 100,
