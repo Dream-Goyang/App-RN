@@ -9,7 +9,7 @@ const ExerciseMain = ({navigation}) => {
     const walk = 30000
 
     return(
-        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10}}>
+        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
             
             <View style={{alignItems:'space-around', flexDirection: 'row'}}>
        
