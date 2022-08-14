@@ -1,12 +1,20 @@
-import React, {useState} from "react";
+import React, {Component} from "react";
 
-function PointChange() {
-    const [walk, setWalk, point, setPoint] = useState(0);
-
-    const changeB = () => {
-        setPoint(prevPoint => prevPoint+(prevWalk-(prevWalk%100))/100)
-        setWalk(prevWalk => prevWalk%100);
+class PointChange extends Component{
+    constructor(){
+        super();
+        this.walk = 30000;
+        this.point = 100;
+        this.state= {
+            walk: 30000,
+            point: 100,
+        };
     }
+}
 
-    return(walk, point)
+chageWalk= ()=>{
+    this.state.walk=walk%100;
+    this.state.point=point+(walk-walk%100)/100
+    this.setState({walk: walk%100})
+    this.setState({point: point+(walk-walk%100)/100})
 }
