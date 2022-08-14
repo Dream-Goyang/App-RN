@@ -4,6 +4,7 @@ import {buttonStyles, titleStyles, imageStyles, HorizonLine, dateStyles, circleS
 
 const ExerciseMain = ({navigation}) => {
     const today = new Date();
+    var walk = 30000
     return(
         <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
             
@@ -35,7 +36,7 @@ const ExerciseMain = ({navigation}) => {
                     </View>
                 </View>
                 <View style = {{alignItems:'space-around', flexDirection: 'row', marginTop:10}}>
-                    <Text style = {circleStyles.numText}> 30,000</Text>
+                    <Text style = {circleStyles.numText}> {walk}</Text>
                     <Text style = {circleStyles.walkText}> 걸음</Text>
                 </View>
                 <View style = {{marginTop:10}}>
