@@ -5,9 +5,15 @@ import {buttonStyles, titleStyles, imageStyles, HorizonLine, rankStyles} from '.
 import PointChange from '../components/PointChange';
 
 const ExerciseMain = ({navigation}) => { 
-    const point = 100
-    const walk = 30000
+    var walk = 30000
+    var point = 100
 
+    chageWalk= ()=>{
+        state.walk=walk%100;
+        state.point=point+(walk-walk%100)/100
+        setState({walk: walk%100})
+        setState({point: point+(walk-walk%100)/100})
+    }
     return(
         <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
             
