@@ -120,3 +120,12 @@ export const SightStyles=StyleSheet.create({
         color: 'black',
     }
 });
+
+
+export const MapStyles=StyleSheet.create({
+    map:{
+        flex: 0,
+        width: Width-50,
+        height: 350,
+    }
+});
