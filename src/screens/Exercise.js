@@ -21,12 +21,11 @@ const ExerciseMain = ({navigation}) => {
 
             <Text style={HorizonLine.line}></Text>
             <View style={{alignItems:'flex-start', marginRight:200}}>
-                <Text style={dateStyles.dateText}>DATE: 2022-08-11</Text>
+                <Text style={dateStyles.dateText}>DATE: 2022-08-14</Text>
             </View>
             
-
             <View style = {circleStyles.circle}>
-                <View style={{alignItems:'space-around', flexDirection: 'row',}}>
+                <View style={{alignItems:'space-around', flexDirection: 'row'}}>
                     <View style={{alignItems:'flex-start', marginTop:0, marginLeft:0}}>
                         <Image source={require('../../assets/winkcat.png')} style={imageStyles.winkcharacter}/>
                     </View>
