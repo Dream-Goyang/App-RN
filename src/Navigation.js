@@ -30,7 +30,6 @@ export default function App() {
         <Drawer.Screen name="Exercise" component={ExerciseScreen} />
         <Drawer.Screen name="MyWalk" component={MyWalkScreen} />
         <Drawer.Screen name="Rank" component={RankScreen} />
-        
       </Drawer.Navigator>
     </NavigationContainer>
   );

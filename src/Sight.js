@@ -1,6 +1,15 @@
 import React, {useState} from "react";
 import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
-import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from './components/SightStyles';
+import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles, MapStyles} from './components/SightStyles';
+import MapView,{PROVIDER_GOOGLE,Marker} from "react-native-maps";
+import * as Location from 'expo-location';
+
+(async () => {
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status === 'granted') {
+        let location = await Location.getCurrentPositionAsync({}); 
+      }
+    })();
 
 const Sight = ({navigation}) => {
 
@@ -23,11 +32,26 @@ const Sight = ({navigation}) => {
       <Text style={HorizonLine.line}></Text>
 
       <View>
-     
-      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('SightScreenMain')}>     
-      <Text style={buttonStyles.buttonText}>1</Text>
-      </TouchableOpacity>
 
+      <MapView
+      style={MapStyles.map}
+      provider={PROVIDER_GOOGLE}
+      region={{
+      latitude: 37.650898236815,
+      longitude: 126.771274812,
+      latitudeDelta: 0.03,
+      longitudeDelta: 0.02,
+      }}>
+
+      <Marker coordinate={{
+      latitude: 37.656284726099,
+      longitude: 126.76622028031,
+      }}
+      pinColor={'red'}
+      onPress={()=>navigation.navigate('SightScreenMain')}/>
+
+      </MapView>
+  
       </View>
 
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('Game')}>     
