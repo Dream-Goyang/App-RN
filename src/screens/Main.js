@@ -1,9 +1,9 @@
-import { View, SafeAreaView,Image,Text} from 'react-native';
+import { View, SafeAreaView,Image,Text,TouchableOpacity} from 'react-native';
 import {imageStyles,viewStyles,textStyles} from '../components/MainStyle';
 import {MainImages} from '../components/images';
 
 
-export default function MakeAccountScreen({ navigation }) {
+export default function MainScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
           <View style={viewStyles.profile}>
@@ -30,13 +30,19 @@ export default function MakeAccountScreen({ navigation }) {
           <Text style={{fontSize:20,alignSelf:'flex-start',color:'grey',paddingLeft:10,}}> lets use walk goyang </Text>
         </View>
 
-        <View style={{paddingTop:25}}>
-          <Image source={MainImages.letswalk} style={imageStyles.title}/>
-        </View>
+        <TouchableOpacity onPress={()=>navigation.navigate('MyWalk')}>     
+          <View style={{paddingTop:25}}>
+            <Image source={MainImages.letswalk} style={imageStyles.title}/>
+          </View>
+        </TouchableOpacity>
 
-        <View style={{paddingTop:25}}>
-          <Image source={MainImages.letstour} style={imageStyles.title}/>
-        </View>
+        <TouchableOpacity onPress={()=>navigation.navigate('SightScreenMain')}>     
+          <View style={{paddingTop:25}}>
+            <Image source={MainImages.letstour} style={imageStyles.title}/>
+          </View>
+        </TouchableOpacity>
+
+
 
       </View>
     </SafeAreaView>

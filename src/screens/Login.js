@@ -3,7 +3,6 @@ import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles} from '../components/LoginStyle';
 
-
 export default function LoginScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
@@ -14,7 +13,7 @@ export default function LoginScreen({ navigation }) {
         <TextInput style={inputStyles.LoginInput} placeholder="put your PW"></TextInput>
       </View>
 
-      <TouchableOpacity style={buttonStyles.longButton}>
+      <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('Main')}>
         <Text style={buttontextStyles.longText}>Login</Text>
       </TouchableOpacity>
 
@@ -32,7 +31,7 @@ export default function LoginScreen({ navigation }) {
             <Text style={buttontextStyles.smallText}>  find pw  |</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={buttonStyles.smallButton}>
+        <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('MakeAccount')}>
             <Text style={buttontextStyles.smallText}>  make account  </Text>
         </TouchableOpacity>
       </View>

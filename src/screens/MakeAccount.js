@@ -4,7 +4,7 @@ import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,textStyles} from '../components/MakeAccountStyle';
 
 
-export default function LoginScreen({ navigation }) {
+export default function MakeAccountScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
       <View style={viewStyles.titlecontainer}>
@@ -56,7 +56,7 @@ export default function LoginScreen({ navigation }) {
 
 
       <View style={viewStyles.itemcontainer}>
-        <TouchableOpacity style={buttonStyles.longButton}>
+        <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('Main')}>
           <Text style={buttontextStyles.longText}>Make Account</Text>
         </TouchableOpacity>
       </View>
