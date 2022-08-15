@@ -19,7 +19,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Main">
+      <Drawer.Navigator initialRouteName="Login">
         <Drawer.Screen name="Login" component={LoginScreen} />
         <Drawer.Screen name="MakeAccount" component={MakeAccountScreen} />
         <Drawer.Screen name="Main" component={MainScreen} />

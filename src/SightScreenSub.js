@@ -14,6 +14,7 @@ const SightScreenSub = () => {
         backgroundColor: 'white'
       }}
     >
+      
       <View style={SightStyles.rectangleN}>
         <Text style={SightStyles.name}>일산 호수공원</Text>
       </View>

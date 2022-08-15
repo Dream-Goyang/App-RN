@@ -13,6 +13,8 @@ import * as Location from 'expo-location';
 
 const Sight = ({navigation}) => {
 
+  const [color, setColor] = useState('red')
+
   return (
     <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent:'flex-start', marginTop: 0, backgroundColor: 'white'}}>
       
@@ -47,7 +49,7 @@ const Sight = ({navigation}) => {
       latitude: 37.656284726099,
       longitude: 126.76622028031,
       }}
-      pinColor={'red'}
+      pinColor= {color}
       onPress={()=>navigation.navigate('SightScreenMain')}/>
 
       </MapView>
