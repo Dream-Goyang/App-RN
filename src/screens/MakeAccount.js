@@ -57,7 +57,7 @@ export default function MakeAccountScreen({ navigation }) {
 
       <View style={viewStyles.itemcontainer}>
         <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('Main')}>
-          <Text style={buttontextStyles.longText}>Make Account</Text>
+          <Text style={buttontextStyles.longText}>계정 생성하기</Text>
         </TouchableOpacity>
       </View>
 
