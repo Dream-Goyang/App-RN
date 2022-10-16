@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
-import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from './components/SightStyles';
+import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from '../components/SightStyles';
 
 const Game = ({navigation}) => {
 
@@ -15,7 +15,7 @@ const Game = ({navigation}) => {
       </View>
       
       <View style={{alignItems: 'flex-start', marginLeft: 15}}>
-      <Image source={require('../assets/Game_character.png')} style={imageStyles.character2}/>
+      <Image source={require('../../assets/Game_character.png')} style={imageStyles.character2}/>
       </View>
 
       </View>
@@ -27,7 +27,7 @@ const Game = ({navigation}) => {
       </View>
 
       <Image
-        source={require("../assets/Game_pic.png")}
+        source={require("../../assets/Game_pic.png")}
         style={imageStyles.image2}
       />
 
