@@ -24,7 +24,7 @@ export const imageStyles=StyleSheet.create({
     title:{
         alignSelf:'center',
         height:100,
-        width:width-80,
+        width:width-50,
     },
     box:{
         alignSelf:'center',
