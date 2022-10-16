@@ -28,7 +28,7 @@ const SightScreenMain = ({navigation}) => {
 
       <Image source={require('../assets/Sight_pic.png')} style={imageStyles.image}/>
 
-      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('SightScreenSub')}>     
+      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('관광지소개')}>     
       <Text style={buttonStyles.buttonText}>관광지 소개</Text>
       </TouchableOpacity>
 
