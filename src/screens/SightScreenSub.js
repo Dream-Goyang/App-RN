@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SafeAreaView, View, Text, Image, ScrollView} from "react-native";
-import { imageStyles, SightStyles } from "./components/SightStyles";
+import { imageStyles, SightStyles } from "../components/SightStyles";
 
 const SightScreenSub = () => {
   
@@ -19,7 +19,7 @@ const SightScreenSub = () => {
       </View>
 
       <Image
-        source={require("../assets/Sight_pic.png")}
+        source={require("../../assets/Sight_pic.png")}
         style={imageStyles.image}
       />
 
