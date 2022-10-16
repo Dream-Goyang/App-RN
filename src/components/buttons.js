@@ -37,6 +37,21 @@ export const buttonStyles=StyleSheet.create({
         elevation: 3,
         backgroundColor:'#006655',
     },
+    findButton:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        width:width-70,
+        height:45,
+        marginTop:10,
+        marginLeft:3,
+        paddingLeft:15,
+        paddingTop:2,
+        borderRadius:20,
+        backgroundColor:'#06ae7a',
+        color:'#000000',
+        borderWidth:1,
+        borderColor:'#696969',
+    },
 });
 
 export const buttontextStyles=StyleSheet.create({
