@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
-import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from './components/SightStyles';
+import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles} from '../components/SightStyles';
 
 const SightScreenMain = ({navigation}) => {
 
@@ -15,7 +15,7 @@ const SightScreenMain = ({navigation}) => {
       </View>
       
       <View style={{alignItems: 'flex-start', marginLeft: 15}}>
-      <Image source={require('../assets/Sight_character.png')} style={imageStyles.character}/>
+      <Image source={require('../../assets/Sight_character.png')} style={imageStyles.character}/>
       </View>
 
       </View>
@@ -26,7 +26,7 @@ const SightScreenMain = ({navigation}) => {
       <Text style={SightStyles.name}>일산 호수공원</Text>
       </View>
 
-      <Image source={require('../assets/Sight_pic.png')} style={imageStyles.image}/>
+      <Image source={require('../../assets/Sight_pic.png')} style={imageStyles.image}/>
 
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('관광지소개')}>     
       <Text style={buttonStyles.buttonText}>관광지 소개</Text>
