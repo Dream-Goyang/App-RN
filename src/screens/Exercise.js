@@ -6,7 +6,7 @@ const ExerciseMain = ({navigation}) => {
     const today = new Date();
     var walk = 30000
     return(
-        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
+        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', backgroundColor: 'white'}}>
             
             <View style={{alignItems:'space-around', flexDirection: 'row'}}>
        
@@ -46,7 +46,7 @@ const ExerciseMain = ({navigation}) => {
             </View>
 
             <View style={{marginTop:60}}>
-                <TouchableOpacity style={buttonStyles.exerciseButton} onPress={()=>navigation.navigate('MyWalk')}>     
+                <TouchableOpacity style={buttonStyles.exerciseButton} onPress={()=>navigation.navigate('나의통계')}>     
                 <Text style={buttonStyles.buttonText}>통계 보러가기</Text>
                 </TouchableOpacity>
             </View>           
