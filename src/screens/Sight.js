@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
-import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles, MapStyles} from './components/SightStyles';
+import {buttonStyles, titleStyles, imageStyles, HorizonLine, SightName, SightStyles, MapStyles} from '../components/SightStyles';
 import MapView,{PROVIDER_GOOGLE,Marker} from "react-native-maps";
 import * as Location from 'expo-location';
 
@@ -24,7 +24,7 @@ const Sight = ({navigation}) => {
       </View>
       
       <View style={{alignItems: 'flex-start', marginLeft: 15}}>
-      <Image source={require('../assets/Sight_character.png')} style={imageStyles.character}/>
+      <Image source={require('../../assets/Sight_character.png')} style={imageStyles.character}/>
       </View>
 
       </View>
