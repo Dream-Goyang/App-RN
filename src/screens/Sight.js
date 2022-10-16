@@ -48,13 +48,13 @@ const Sight = ({navigation}) => {
       longitude: 126.76622028031,
       }}
       pinColor={'red'}
-      onPress={()=>navigation.navigate('SightScreenMain')}/>
+      onPress={()=>navigation.navigate('명소보러가기')}/>
 
       </MapView>
   
       </View>
 
-      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('Game')}>     
+      <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('고양이찾기')}>     
       <Text style={buttonStyles.buttonText}>고양이 찾기</Text>
       </TouchableOpacity>
 
