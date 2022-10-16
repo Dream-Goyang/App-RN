@@ -6,7 +6,7 @@ const height=Dimensions.get('window').height;
 export const viewStyles=StyleSheet.create({
     whole:{
         flex:1,
-        backgroundColor:'lightgrey',
+        backgroundColor:'white',
         alignItems:'center',
         justifyContent:'center',
     },
@@ -37,18 +37,37 @@ export const viewStyles=StyleSheet.create({
         backgroundColor:'white',
     },
     itemcontainer:{
-        height:100,
+        height:120,
         width:width,
         alignItems:'center',
         paddingVertical:10,
+        backgroundColor:'white',
+        marginBottom:-40,
     },
     titlecontainer:{
-        height:100,
+        height:80,
         width:width,
         paddingVertical:10,
         backgroundColor:'#06ae7a',
         justifyContent:'center',
-    }
+        marginTop:-15
+    },
+    agreeline:{
+        borderBottomColor: 'black',
+        borderBottomWidth: 1,
+        width:width-50,
+        paddingTop:2,
+        alignSelf:'center',
+    },
+    findtitlecontainer:{
+        height:70,
+        width:width,
+        paddingVertical:10,
+        backgroundColor:'#06ae7a',
+        justifyContent:'center',
+        marginTop:-65,
+        marginBottom:20,
+    },
     
 });
 
@@ -62,19 +81,37 @@ export const imageStyles=StyleSheet.create({
 
 export const textStyles=StyleSheet.create({
     title1:{
-        fontSize:40,
+        fontSize:33,
         alignSelf:'center',
         justifyContent:'center',
         color:'white',
+        fontWeight:'600',
+        paddingTop:15,
     },
     title2:{
         textAlign:'flex-start',
         paddingLeft:25,
         color:'black',
-        fontSize:24,
+        fontSize:20,
+        fontWeight:'600',
+        paddingStart:32,
+        paddingTop:25,
+    },
+    allagree:{
+        color:'black',
+        fontSize:17,
+        fontWeight: '700',
     },
     agree:{
         color:'black',
         fontSize:17,
+    },
+    findtx:{
+        fontSize:30,
+        alignSelf:'center',
+        justifyContent:'center',
+        color:'white',
+        fontWeight:'600',
+        paddingTop:5,
     },
 })
