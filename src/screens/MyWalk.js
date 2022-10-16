@@ -15,7 +15,7 @@ const ExerciseMain = ({navigation}) => {
         setState({point: point+(walk-walk%100)/100})
     }
     return(
-        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', marginTop: 10, backgroundColor: 'white'}}>
+        <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', backgroundColor: 'white'}}>
             
             <View style={{alignItems:'space-around', flexDirection: 'row'}}>
        
@@ -36,13 +36,13 @@ const ExerciseMain = ({navigation}) => {
 
                 <View style={{alignItems:'space-around', flexDirection: 'row', marginTop:-50}}>
                     <View style = {{marginLeft:0, marginRight:-15}}>
-                        <TouchableOpacity style={buttonStyles.checkButton} onPress={()=>navigation.navigate('MyWalk')}>     
+                        <TouchableOpacity style={buttonStyles.checkButton} onPress={()=>navigation.navigate('나의통계')}>     
                             <Text style={rankStyles.titleText}>나의 통계</Text>
                         </TouchableOpacity>
                     </View>
 
                     <View style = {{marginLeft:15, justifyContent:'flex-end'}}>
-                        <TouchableOpacity style={buttonStyles.noncheckButton} onPress={()=>navigation.navigate('Rank')}>     
+                        <TouchableOpacity style={buttonStyles.noncheckButton} onPress={()=>navigation.navigate('랭킹')}>     
                             <View style = {{alignItems:'center'}}>
                                 <Text style={rankStyles.titleText}>랭킹</Text>
                             </View>
