@@ -7,9 +7,6 @@ import {imageStyles,viewStyles,textStyles} from '../components/MakeAccountStyle'
 export default function MakeAccountScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
-      <View style={viewStyles.findtitlecontainer}>
-        <Text style={textStyles.findtx}>아이디/비밀번호 찾기</Text>
-      </View>
 
       <View style={viewStyles.contentscontainer}>
         <Text style={textStyles.title2}>아이디 찾기</Text>

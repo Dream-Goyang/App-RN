@@ -18,7 +18,7 @@ export const buttonStyles=StyleSheet.create({
         backgroundColor:'#06ae7a',
         color:'#000000',
         borderWidth:1,
-        borderColor:'#696969',
+        borderColor:'transparent',
     },
     smallButton: {
         alignItems: 'center',
@@ -50,7 +50,7 @@ export const buttonStyles=StyleSheet.create({
         backgroundColor:'#06ae7a',
         color:'#000000',
         borderWidth:1,
-        borderColor:'#696969',
+        borderColor:'transparent',
     },
 });
 
