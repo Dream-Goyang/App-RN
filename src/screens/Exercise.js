@@ -4,7 +4,12 @@ import {buttonStyles, titleStyles, imageStyles, HorizonLine, dateStyles, circleS
 
 const ExerciseMain = ({navigation}) => {
     const today = new Date();
-    var walk = 30000
+    var walk = 30000;
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth();
+    var date = now.getDate();
+    
     return(
         <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', backgroundColor: 'white'}}>
             
@@ -22,7 +27,7 @@ const ExerciseMain = ({navigation}) => {
 
             <Text style={HorizonLine.line}></Text>
             <View style={{alignItems:'flex-start', marginRight:200}}>
-                <Text style={dateStyles.dateText}>DATE: 2022-08-14</Text>
+                <Text style={dateStyles.dateText}>DATE: {year}-{month + 1}-{date}</Text>
             </View>
             
             <View style = {circleStyles.circle}>
