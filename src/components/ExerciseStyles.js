@@ -82,13 +82,13 @@ export const titleStyles=StyleSheet.create({
 export const imageStyles=StyleSheet.create({
     exercisecharacter:{
         resizeMode:'contain',
-        width: Width-300,
+        width: 60,
         height: 80,
     },
     winkcharacter:{
         resizeMode:'stretch',
-        width: Width-330,
-        height: 50,
+        width: 40,
+        height: 40,
     },
 });
 
@@ -151,7 +151,7 @@ export const rankStyles=StyleSheet.create({
         lineHeight: 30,
         fontWeight: 'bold',
         letterSpacing: 0.25,
-        color: 'black'
+        color: 'black',
     },
     mainText:{
         fontSize: 25,
@@ -208,7 +208,10 @@ export const circleStyles=StyleSheet.create({
         lineHeight: 30,
         fontWeight: "800",
         letterSpacing: 0.25,
-        color: 'black'
+        color: 'black',
+        justifyContent: "center",
+        paddingTop:5,
+        paddingLeft:5,
     },
     numText:{
         fontSize: 45,
@@ -226,4 +229,3 @@ export const circleStyles=StyleSheet.create({
         marginBottom:8
     }
 })
-
