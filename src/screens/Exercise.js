@@ -11,6 +11,12 @@ export default function App({navigation}) {
  const [PedomaterAvailability, SetPedomaterAvailability] = useState("");
  const [StepCount, SetStepCount] = useState(0);
 
+ const today = new Date();
+ var now = new Date();
+ var year = now.getFullYear();
+ var month = now.getMonth();
+ var date = now.getDate();
+
  var WindowHeight = Dimensions.get("window").height;
 
  var Dist = StepCount / 1300;
@@ -54,7 +60,7 @@ export default function App({navigation}) {
     <Text style={HorizonLine.line}></Text>
 
     <View style={{alignItems:'flex-start', marginRight:200}}>
-        <Text style={dateStyles.dateText}>DATE: 2022-08-14</Text>
+    <Text style={dateStyles.dateText}>DATE: {year}-{month + 1}-{date}</Text>
     </View>
 
     <View style={{ flexDirection:"row",flex: 1, justifyContent: "center",alignSelf: "center",paddingTop:20 }}>
