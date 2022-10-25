@@ -18,7 +18,7 @@ export default function LoginScreen({ navigation }) {
         <Text style={{fontSize:15}}>자동 로그인</Text>
       </View>
 
-      <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
+      <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.reset({routes: [{name:'걸어갈고양'}]})}>
         <Text style={buttontextStyles.longText}>로그인</Text>
       </TouchableOpacity>
 
