@@ -41,8 +41,7 @@ return (
 <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="로그인" component={LoginScreen} options={{ headerShown: false}}/>
-        <Tab.Screen name="회원가입" component={MakeAccountScreen} options={{title: '회원가입',  headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold', fontSize: 25,},headerLeftLabelVisible: false, 
-       }}/>
+        <Tab.Screen name="회원가입" component={MakeAccountScreen} options={{title: '회원가입',  headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold', fontSize: 25,},headerLeftLabelVisible: false, }}/>
         <Tab.Screen name="아이디/비밀번호찾기" component={findid} options={{title: '아이디/비밀번호 찾기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="걸어갈고양" component={MainScreen} options={{title: '걸어갈고양', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},}}/>
         <Tab.Screen name="고양시명소보러가기" component={SightScreen} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>

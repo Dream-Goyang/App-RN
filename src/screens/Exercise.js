@@ -6,7 +6,7 @@ import CircularProgress from "react-native-circular-progress-indicator";
 import {buttonStyles, titleStyles, imageStyles, HorizonLine, dateStyles, circleStyles} from '../components/ExerciseStyles';
  
 
-export default function App() {
+export default function App({navigation}) {
 
  const [PedomaterAvailability, SetPedomaterAvailability] = useState("");
  const [StepCount, SetStepCount] = useState(0);
@@ -39,9 +39,7 @@ export default function App() {
 
  return (
    <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start',}}>
-    <View style={{flex:1,backgroundColor:'#06ae7a',width:'100%',alignItems:'center', justifyContent:'center',height:80}}>
-        <Text style={styles.whitetitleDesign}>운동하기</Text>
-    </View>
+    
     <View style={{alignItems:'space-around', flexDirection: 'row'}}>
         <View style={{alignItems: 'flex-start', marginRight: 100}}>
            <Text style={titleStyles.lightText}>오늘도 고양과 함께</Text>
