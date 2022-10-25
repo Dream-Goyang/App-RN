@@ -7,12 +7,11 @@ export default function MainScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
           <View style={viewStyles.profile}>
-            <Text style={textStyles.title}> 걸어갈고양</Text>
-            <View style={{flexDirection:"row",paddingVertical:30,alignItems:'center',}}>
+            <View style={{flexDirection:"row",alignItems:'center',}}>
               <Image source={MainImages.profile} style={imageStyles.profile}/>
-              <View style={{justifyContent:'flex-start'}}>
-                <Text style={{fontSize:26, color:'white', fontWeight:'700', paddingTop:10, paddingLeft:15}}>이화냥님 안녕하세요! </Text>
-                <Text style={{fontSize:15, color:'white', paddingTop:10, paddingHorizontal:15}}>walkingcat@naver.com </Text>
+              <View>
+                <Text style={{fontSize:26, color:'white', fontWeight:'700', paddingTop:5, paddingLeft:15}}>이화냥님 안녕하세요! </Text>
+                <Text style={{fontSize:15, color:'white', paddingTop:5, paddingHorizontal:15}}>walkingcat@naver.com </Text>
               </View>
             </View>
           </View>

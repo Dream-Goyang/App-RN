@@ -18,17 +18,13 @@ export default function LoginScreen({ navigation }) {
         <Text style={{fontSize:15}}>자동 로그인</Text>
       </View>
 
-      <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
+      <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.reset({routes: [{name:'걸어갈고양'}]})}>
         <Text style={buttontextStyles.longText}>로그인</Text>
       </TouchableOpacity>
 
       <View style={{flexDirection:"row",}}>
         <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('아이디/비밀번호찾기')}>
-          <Text style={buttontextStyles.smallText}>  아이디 찾기  |</Text>
-        </TouchableOpacity>
-                            
-        <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('아이디/비밀번호찾기')}>
-            <Text style={buttontextStyles.smallText}>  비밀번호 찾기  |</Text>
+          <Text style={buttontextStyles.smallText}>  아이디 / 비밀번호 찾기  |</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('회원가입')}>

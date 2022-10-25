@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { SafeAreaView, View, Text, Image, ScrollView} from "react-native";
-import { imageStyles, SightStyles } from "../components/SightStyles";
+import { imageStyles, SightStyles } from "../../components/SightStyles";
 
-const SightScreenSub = () => {
+const subScreen8 = () => {
   
   return (
     <SafeAreaView
@@ -15,11 +15,11 @@ const SightScreenSub = () => {
       }}
     >
       <View style={SightStyles.rectangleN}>
-        <Text style={SightStyles.name}>일산 호수공원</Text>
+        <Text style={SightStyles.name}>고양 스타필드</Text>
       </View>
 
       <Image
-        source={require("../../assets/Sight_pic.png")}
+        source={require("../../../assets/Sight_pic.png")}
         style={imageStyles.image}
       />
 
@@ -37,4 +37,4 @@ const SightScreenSub = () => {
   );
 };
 
-export default SightScreenSub;
+export default subScreen8;

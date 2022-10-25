@@ -7,9 +7,6 @@ import {imageStyles,viewStyles,textStyles} from '../components/MakeAccountStyle'
 export default function MakeAccountScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
-      <View style={viewStyles.titlecontainer}>
-        <Text style={textStyles.title1}>회원가입</Text>
-      </View>
 
       <View style={viewStyles.contentscontainer}>
         <Text style={textStyles.title2}>이메일 회원가입</Text>

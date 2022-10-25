@@ -22,10 +22,6 @@ const Game = ({navigation}) => {
         
       <Text style={HorizonLine.line}></Text>
 
-      <View style={SightStyles.rectangleN}>
-      <Text style={SightStyles.name}>일산 호수공원</Text>
-      </View>
-
       <Image
         source={require("../../assets/Game_pic.png")}
         style={imageStyles.image2}

@@ -8,7 +8,6 @@ export const viewStyles=StyleSheet.create({
         flex:1,
         backgroundColor:'white',
         alignItems:'center',
-        justifyContent:'center',
     },
     todaywalk:{
         flexDirection:"row",
@@ -22,7 +21,7 @@ export const viewStyles=StyleSheet.create({
     profile:{
         backgroundColor:'#06ae7a',
         width:width,
-        height:200,
+        height:height-720,
         alignItems:'center',
         justifyContent:'center',
     },
