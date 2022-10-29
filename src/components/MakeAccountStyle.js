@@ -57,6 +57,7 @@ export const viewStyles=StyleSheet.create({
         borderBottomWidth: 1,
         width:width-50,
         paddingTop:2,
+        margin:10,
         alignSelf:'center',
     },
     findtitlecontainer:{
@@ -114,4 +115,16 @@ export const textStyles=StyleSheet.create({
         fontWeight:'600',
         paddingTop:5,
     },
+});
+
+export const acheckstyles = StyleSheet.create({
+    container: {
+        justifyContent:'flex-start',
+        alignItems:'flex-start',
+        marginVertical:15,
+        marginStart:-210
+    },
+    checkbox: {
+        margin:8
+    }
 })

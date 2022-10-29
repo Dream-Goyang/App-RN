@@ -32,6 +32,7 @@ import GameScreen from "./screens/Game";
 import ExerciseScreen from "./screens/Exercise";
 import MyWalkScreen from "./screens/MyWalk";
 import RankScreen from "./screens/Rank";
+import Logout from "./screens/Logout";
 
 const Tab = createStackNavigator();
 
@@ -44,7 +45,8 @@ return (
         <Tab.Screen name="회원가입" component={MakeAccountScreen} options={{title: '회원가입',  headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold', fontSize: 25,},headerLeftLabelVisible: false, }}/>
         <Tab.Screen name="아이디/비밀번호찾기" component={findid} options={{title: '아이디/비밀번호 찾기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="걸어갈고양" component={MainScreen} options={{title: '걸어갈고양', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},}}/>
-        <Tab.Screen name="고양시명소보러가기" component={SightScreen} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false, headerRight: () => <Button title={"home"} color="#fff"/>}}/>     
+        <Tab.Screen name="고양시명소보러가기" component={SightScreen} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false, headerRight: () => <Button title={"home"} color="#fff"/>
+        {/* <Tab.Screen name="고양시명소보러가기" component={SightScreen} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false, headerRight: () => <Button title={"home"} color="#fff" onPress={() => navigation.navigate("걸어갈고양")}/>}}/> */}
         <Tab.Screen name="호수공원" component={screen1} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="킨텍스" component={screen2} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="웨스턴돔" component={screen3} options={{title: '명소 보러가기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
@@ -69,6 +71,7 @@ return (
         <Tab.Screen name="운동하기" component={ExerciseScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="나의통계" component={MyWalkScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="랭킹" component={RankScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
+        <Tab.Screen name="로그아웃" component={Logout} options={{title: '로그아웃', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},}}/> 
       </Tab.Navigator>
 </NavigationContainer>
 
