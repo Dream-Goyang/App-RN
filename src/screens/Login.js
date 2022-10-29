@@ -4,7 +4,7 @@ import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,checkstyles} from '../components/LoginStyle';
 import CheckBox from '@react-native-community/checkbox';
 
-const [toggleCheckBox, setToggleCheckBox] = useState(false)
+{/*const [toggleCheckBox, setToggleCheckBox] = useState(false)*/}
 
 export default function LoginScreen({ navigation }) {
   return (
@@ -16,7 +16,7 @@ export default function LoginScreen({ navigation }) {
         <TextInput style={inputStyles.LoginInput} placeholder="비밀번호 입력"></TextInput>
       </View>
 
-      <View style={checkstyles.container}>
+      {/*<View style={checkstyles.container}>
         <View style={checkstyles.checkboxContainer}>
           <CheckBox
             disabled={false}
@@ -25,7 +25,7 @@ export default function LoginScreen({ navigation }) {
             /> 
             <Text style={StyleSheet.label}>자동로그인</Text>
         </View>
-      </View>
+  </View>*/}
 
       <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
         <Text style={buttontextStyles.longText}>로그인</Text>
@@ -33,13 +33,9 @@ export default function LoginScreen({ navigation }) {
 
       <View style={{flexDirection:"row",}}>
         <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('아이디/비밀번호찾기')}>
-          <Text style={buttontextStyles.smallText}>  아이디 찾기  |</Text>
+          <Text style={buttontextStyles.smallText}>  아이디 / 비밀번호 찾기  |</Text>
         </TouchableOpacity>
                             
-        <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('아이디/비밀번호찾기')}>
-            <Text style={buttontextStyles.smallText}>  비밀번호 찾기  |</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={buttonStyles.smallButton} onPress={()=>navigation.navigate('회원가입')}>
             <Text style={buttontextStyles.smallText}>  회원가입  </Text>
         </TouchableOpacity>

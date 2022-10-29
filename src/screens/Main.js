@@ -7,8 +7,7 @@ export default function MainScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
           <View style={viewStyles.profile}>
-            <Text style={textStyles.title}> 걸어갈고양</Text>
-            <View style={{flexDirection:"row",paddingVertical:30,alignItems:'center',}}>
+            <View style={{flexDirection:"row", paddingVertical:30, alignItems:'center',}}>
               
               
               <TouchableOpacity onPress={()=>navigation.navigate('로그아웃')}>     

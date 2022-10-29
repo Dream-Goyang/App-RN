@@ -10,6 +10,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.12",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-firebase/app": "^15.3.0",
     "@react-navigation/bottom-tabs": "^6.4.0",
@@ -25,10 +26,11 @@
     "ios": "^0.0.1",
     "npm": "^8.17.0",
     "pod": "^0.9.0",
-    "react": "17.0.2",
+    "react": "^17.0.2",
     "react-dom": "17.0.2",
     "react-live-clock": "^6.0.6",
     "react-native": "0.68.2",
+    "react-native-bouncy-checkbox": "^3.0.5",
     "react-native-circular-progress-indicator": "^4.4.0",
     "react-native-gesture-handler": "~2.2.1",
     "react-native-maps": "^1.2.0",
