@@ -1,12 +1,15 @@
 import { ScrollView, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
-import {imageStyles,viewStyles,textStyles} from '../components/MakeAccountStyle';
-
+import {imageStyles,viewStyles,textStyles,acheckstyles} from '../components/MakeAccountStyle';
+import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 export default function MakeAccountScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
+      <View style={viewStyles.titlecontainer}>
+        <Text style={textStyles.title1}>회원가입</Text>
+      </View>
 
       <View style={viewStyles.contentscontainer}>
         <Text style={textStyles.title2}>이메일 회원가입</Text>
@@ -23,32 +26,23 @@ export default function MakeAccountScreen({ navigation }) {
 
       <View style={viewStyles.contentscontainer}>
         <Text style={textStyles.title2}>약관 동의</Text>
+        <View style={viewStyles.agreeline}></View>
+
         <ScrollView style={viewStyles.contents}>
-          <View style={viewStyles.checkall}>
-            <Image source={require('../../assets/UncheckedBox.png')} style={imageStyles.box}/>
-            <Text style={textStyles.allagree}> 전체동의</Text>
-          </View>
-
-          <View style={viewStyles.agreeline}></View>
-
           <View style={viewStyles.checkone}>
-            <Image source={require('../../assets/UncheckedBox.png')} style={imageStyles.box}/>
-            <Text style={textStyles.agree}> 1. 이용약관 동의 (필수)</Text>
+            <Text style={textStyles.agree}> ✓  1. 이용약관 동의 (필수)</Text>
           </View>
 
           <View style={viewStyles.checkone}>
-            <Image source={require('../../assets/UncheckedBox.png')} style={imageStyles.box}/>
-            <Text style={textStyles.agree}> 2. 개인정보 수집 및 이용동의 (필수)</Text>
+            <Text style={textStyles.agree}> ✓  2. 개인정보 수집 및 이용동의 (필수)</Text>
           </View>
 
           <View style={viewStyles.checkone}>
-            <Image source={require('../../assets/UncheckedBox.png')} style={imageStyles.box}/>
-            <Text style={textStyles.agree}> 3. 만 14세 이상 이용자 (필수)</Text>
+            <Text style={textStyles.agree}> ✓  3. 만 14세 이상 이용자 (필수)</Text>
           </View>
 
           <View style={viewStyles.checkone}>
-            <Image source={require('../../assets/UncheckedBox.png')} style={imageStyles.box}/>
-            <Text style={textStyles.agree}> 서비스 마케팅 알림 동의 (필수)</Text>
+            <Text style={textStyles.agree}> ✓  4. 서비스 마케팅 알림 동의 (필수)</Text>
           </View>
         </ScrollView>
       </View>
