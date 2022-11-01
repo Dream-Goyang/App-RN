@@ -61,6 +61,7 @@ export const buttontextStyles=StyleSheet.create({
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'white',
+        marginRight:13,
     },
     smallText:{
         fontSize: 16,
