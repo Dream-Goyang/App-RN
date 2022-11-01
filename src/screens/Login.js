@@ -2,9 +2,13 @@ import { Button, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} fro
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,checkstyles} from '../components/LoginStyle';
-import CheckBox from '@react-native-community/checkbox';
+{/*import {Checkbox} from 'react-native-paper';*/}
+{/*import CheckBox from '@react-native-community/checkbox';*/}
 
 {/*const [toggleCheckBox, setToggleCheckBox] = useState(false)*/}
+{/*const MyComponent = () => {
+  const [checked, setChecked] = React.useState(false);
+}*/}
 
 export default function LoginScreen({ navigation }) {
   return (
@@ -26,6 +30,12 @@ export default function LoginScreen({ navigation }) {
             <Text style={StyleSheet.label}>자동로그인</Text>
         </View>
   </View>*/}
+      {/*<Checkbox
+        status={checked ? 'checked': 'unchecked'}
+        onPress={() => {
+          setChecked(!checked);
+        }}
+      />*/}
 
       <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
         <Text style={buttontextStyles.longText}>로그인</Text>
@@ -45,4 +55,4 @@ export default function LoginScreen({ navigation }) {
     
 
   );
-}
+};
