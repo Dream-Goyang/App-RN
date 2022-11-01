@@ -94,7 +94,7 @@ const ExerciseMain = ({navigation}) => {
                 </View>
 
                 <View style={{marginTop:-30, marginRight:10}}>
-                    <TouchableOpacity style={buttonStyles.pointButton}>     
+                    <TouchableOpacity style={buttonStyles.pointButton} onPress={()=>navigation.navigate('기부하기')}>     
                         <Text style={buttonStyles.buttonText}>기부하기</Text>
                     </TouchableOpacity>
                 </View>
