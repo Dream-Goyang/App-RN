@@ -63,7 +63,7 @@ export default function App({navigation}) {
         <Text style={dateStyles.dateText}>DATE: {year}-{month + 1}-{date}</Text>
     </View>
 
-    <View style={{ flexDirection:"row",flex: 1, justifyContent: "center",alignSelf: "center",paddingTop:20 }}>
+    <View style={{ flexDirection:"row",flex: 1, justifyContent: "center",alignSelf: "center",paddingTop:50}}>
         <Image source={require('../../assets/winkcat.png')} style={imageStyles.winkcharacter}/>
         <Text style={circleStyles.titleText}>이화냥님의 걸음 수</Text>
     </View>
@@ -85,26 +85,6 @@ export default function App({navigation}) {
            inActiveStrokeWidth={40}
            activeStrokeWidth={40}         
          ></CircularProgress>
-       </View>
-
- 
-
-    <View style={{ flex: 1, justifyContent: "center" }}>
-        <View style={{ flex: 1 }}>
-            <Text style={[styles.whitetextDesign,{ width: "93%",paddingLeft:27,paddingTop:7},]}>
-                지금까지 걸음 수 : {DistanceCovered} km
-            </Text>
-        </View>
-
- 
-
-         <View style={{ flex: 1 }}>
-           <Text
-             style={[styles.whitetextDesign,{marginLeft: '23%',paddingLeft:27,paddingTop:7},]}>
-             소비한 칼로리 수 : {caloriesBurnt}
-           </Text>
-         </View>
-         <StatusBar style="auto" />
        </View>
 
         <View style={{marginTop:60}}>
