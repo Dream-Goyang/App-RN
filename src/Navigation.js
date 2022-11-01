@@ -33,6 +33,8 @@ import ExerciseScreen from "./screens/Exercise";
 import MyWalkScreen from "./screens/MyWalk";
 import RankScreen from "./screens/Rank";
 import Logout from "./screens/Logout";
+import Donation from "./screens/Donation";
+import DonationEnd from "./screens/DonationEnd";
 
 const Tab = createStackNavigator();
 
@@ -71,6 +73,8 @@ return (
         <Tab.Screen name="나의통계" component={MyWalkScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="랭킹" component={RankScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="로그아웃" component={Logout} options={{title: '로그아웃', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
+        <Tab.Screen name="기부하기" component={Donation} options={{title: '기부하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
+        <Tab.Screen name="기부완료" component={DonationEnd} options={{title: '기부완료', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
       </Tab.Navigator>
 </NavigationContainer>
 
