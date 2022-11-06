@@ -26,7 +26,7 @@ const screen3 = ({navigation}) => {
       <Text style={SightStyles.name}>웨스턴돔</Text>
       </View>
 
-      <Image source={require('../../../assets/Sight_pic.png')} style={imageStyles.image}/>
+      <Image source={require('../../../assets/westerndom.png')} style={imageStyles.image}/>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('웨스턴돔s')}>     

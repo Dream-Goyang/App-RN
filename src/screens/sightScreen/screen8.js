@@ -26,7 +26,7 @@ const screen8 = ({navigation}) => {
       <Text style={SightStyles.name}>고양 스타필드</Text>
       </View>
 
-      <Image source={require('../../../assets/Sight_pic.png')} style={imageStyles.image}/>
+      <Image source={require('../../../assets/starfield.png')} style={imageStyles.image}/>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('고양 스타필드s')}>     

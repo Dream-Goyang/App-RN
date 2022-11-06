@@ -26,7 +26,7 @@ const screen1 = ({navigation}) => {
       <Text style={SightStyles.name}>일산 호수공원</Text>
       </View>
 
-      <Image source={require('../../../assets/Sight_pic.png')} style={imageStyles.image}/>
+      <Image source={require('../../../assets/lake.png')} style={imageStyles.image}/>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('호수공원s')}>     

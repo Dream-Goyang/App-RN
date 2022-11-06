@@ -70,7 +70,7 @@ return (
         <Tab.Screen name="운동하기" component={ExerciseScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="나의통계" component={MyWalkScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="랭킹" component={RankScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
-        <Tab.Screen name="로그아웃" component={Logout} options={{title: '로그아웃', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
+        <Tab.Screen name="로그아웃" component={Logout} options={{title: '로그아웃', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false,}}/> 
       </Tab.Navigator>
 </NavigationContainer>
 

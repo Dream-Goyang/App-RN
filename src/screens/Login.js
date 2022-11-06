@@ -1,10 +1,11 @@
-import { Button, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
+import { View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,checkstyles} from '../components/LoginStyle';
-import CheckBox from '@react-native-community/checkbox';
+import {useState} from 'react';
+import { Checkbox } from 'react-native-paper';
 
-{/*const [toggleCheckBox, setToggleCheckBox] = useState(false)*/}
+const [toggleCheckBox, setToggleCheckBox] = useState(false)
 
 export default function LoginScreen({ navigation }) {
   return (
@@ -16,16 +17,16 @@ export default function LoginScreen({ navigation }) {
         <TextInput style={inputStyles.LoginInput} placeholder="비밀번호 입력"></TextInput>
       </View>
 
-      {/*<View style={checkstyles.container}>
+      <View style={checkstyles.container}>
         <View style={checkstyles.checkboxContainer}>
-          <CheckBox
-            disabled={false}
+          <Checkbox
+            status={checked ? 'checked' : 'unchecked'}
             value={toggleCheckBox}
-            onValueChange={(newValue) => setToggleCheckBox(newValue)}
+            onValueChange={() => setToggleCheckBox(!checked)}
             /> 
             <Text style={StyleSheet.label}>자동로그인</Text>
         </View>
-  </View>*/}
+      </View>
 
       <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
         <Text style={buttontextStyles.longText}>로그인</Text>

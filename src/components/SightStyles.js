@@ -56,7 +56,7 @@ export const imageStyles=StyleSheet.create({
         height: 80,
     },
     image:{
-        resizeMode:'contain',
+        resizeMode:'cover',
         width: Width-50,
         height: 200,
         borderColor: '#E7E7E7',
