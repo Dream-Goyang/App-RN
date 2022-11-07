@@ -4,16 +4,25 @@ import { SafeAreaView, View, Text, Image, TouchableOpacity} from "react-native";
 import {buttonStyles, titleStyles, imageStyles, HorizonLine, rankStyles} from '../components/ExerciseStyles'
 import PointChange from '../components/PointChange';
 
-const ExerciseMain = ({navigation}) => { 
-    var walk = 30000
-    var point = 100
+const ExerciseMain = ({route,navigation}) => { 
+    const { walked } = route.params;
+    var mypoint = 0;
+    const [point, setPoint] = useState(0);
 
-    chageWalk= ()=>{
-        state.walk=walk%100;
-        state.point=point+(walk-walk%100)/100
-        setState({walk: walk%100})
-        setState({point: point+(walk-walk%100)/100})
+    const PointHandler = () => {
+        setPoint(walked%100);
     }
+
+
+    /*
+    chageWalked= ()=>{
+        state.walked=walked%100;
+        state.point=point+(walked-walked%100)/100
+        setState({walked: walked%100})
+        setState({point: point+(walked-walked%100)/100})
+    }
+    */
+
     return(
         <SafeAreaView style={{flex:1, alignItems:'center', justifyContent:'flex-start', backgroundColor: 'white'}}>
             
@@ -61,13 +70,13 @@ const ExerciseMain = ({navigation}) => {
                 <View style={{marginTop:-45, marginRight:15}}>
                     <View style={rankStyles.subchart}>
                         <View style={{alignItems:'center', justifyContent:'center'}}>
-                            <Text style={rankStyles.mainText}>{walk}걸음</Text>
+                            <Text style={rankStyles.mainText}>{walked}걸음</Text>
                         </View>
                     </View>
                 </View>
                 
                 <View style={{marginTop:-30, marginRight:10}}>
-                    <TouchableOpacity style={buttonStyles.pointButton} onPress={()=>PointChange}>     
+                    <TouchableOpacity style={buttonStyles.pointButton} onPress={PointHandler}>     
                         <Text style={buttonStyles.buttonText}>포인트로 환산하기</Text>
                     </TouchableOpacity>
                 </View>
@@ -88,7 +97,7 @@ const ExerciseMain = ({navigation}) => {
                 <View style={{marginTop:-45, marginRight:15}}>
                     <View style={rankStyles.subchart}>
                         <View style={{alignItems:'center', justifyContent:'center'}}>
-                            <Text style={rankStyles.mainText}>{point}P</Text>
+                            <Text style={rankStyles.mainText}>{point}포인트</Text>
                         </View>
                     </View>
                 </View>
