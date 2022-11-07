@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StatusBar } from "expo-status-bar";
+//import { StatusBar } from "expo-status-bar";
 import {StyleSheet,Text,View,Dimensions,Button,SafeAreaView,Image,TouchableOpacity} from "react-native";
 import { Pedometer } from "expo-sensors";
 import CircularProgress from "react-native-circular-progress-indicator";
@@ -88,7 +88,7 @@ export default function App({navigation}) {
        </View>
 
         <View style={{marginTop:60}}>
-            <TouchableOpacity style={buttonStyles.exerciseButton} onPress={()=>navigation.navigate('나의통계')}>     
+            <TouchableOpacity style={buttonStyles.exerciseButton} onPress={()=>navigation.navigate('나의통계',{walked:StepCount})}>     
             <Text style={buttonStyles.buttonText}>통계 보러가기</Text>
             </TouchableOpacity>
         </View> 
