@@ -26,7 +26,7 @@ const screen7 = ({navigation}) => {
       <Text style={SightStyles.name}>고양 이케아</Text>
       </View>
 
-      <Image source={require('../../../assets/Sight_pic.png')} style={imageStyles.image}/>
+      <Image source={require('../../../assets/ikea.png')} style={imageStyles.image}/>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
       <TouchableOpacity style={buttonStyles.sightButton} onPress={()=>navigation.navigate('고양 이케아s')}>     

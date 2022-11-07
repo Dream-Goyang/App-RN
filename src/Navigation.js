@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer, StackActions} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import {Button} from 'react-native';
 
@@ -38,6 +38,7 @@ import DonationEnd from "./screens/DonationEnd";
 
 const Tab = createStackNavigator();
 
+
 export default function App() {
 
 return (
@@ -74,7 +75,7 @@ return (
         <Tab.Screen name="랭킹" component={RankScreen} options={{title: '운동하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false}}/>
         <Tab.Screen name="로그아웃" component={Logout} options={{title: '로그아웃', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
         <Tab.Screen name="기부하기" component={Donation} options={{title: '기부하기', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
-        <Tab.Screen name="기부완료" component={DonationEnd} options={{title: '기부완료', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerBackVisible: false,}}/> 
+        <Tab.Screen name="기부완료" component={DonationEnd} options={{title: '기부완료', headerStyle: {height: 135, backgroundColor: '#06ae7a',}, headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold',fontSize: 25,},headerLeftLabelVisible: false,}}/> 
       </Tab.Navigator>
 </NavigationContainer>
 

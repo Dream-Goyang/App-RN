@@ -1,4 +1,4 @@
-import { Button, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
+import { View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,checkstyles} from '../components/LoginStyle';
