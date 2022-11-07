@@ -44,9 +44,14 @@ export const checkstyles = StyleSheet.create({
         marginBottom:20,
     },
     checkbox: {
-        alignSelf:'center',
+        marginRight:210,
+        marginTop:12
     },
     label: {
         margin: 8,
     },
+    accbox: {
+        marginStart:30,
+        marginTop:12
+    }
 })
