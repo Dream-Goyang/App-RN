@@ -1,7 +1,6 @@
-import { ScrollView, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
-import { inputStyles } from '../components/Input';
+import {  View, SafeAreaView,TouchableOpacity, Text} from 'react-native';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
-import {imageStyles,viewStyles,textStyles} from '../components/MakeAccountStyle';
+import {viewStyles,textStyles} from '../components/MakeAccountStyle';
 
 
 export default function MakeAccountScreen({ navigation }) {

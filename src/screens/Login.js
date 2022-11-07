@@ -2,8 +2,8 @@ import { View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
 import {imageStyles,viewStyles,checkstyles} from '../components/LoginStyle';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
-{/*const [toggleCheckBox, setToggleCheckBox] = useState(false)*/}
 
 export default function LoginScreen({ navigation }) {
   return (
@@ -15,16 +15,19 @@ export default function LoginScreen({ navigation }) {
         <TextInput style={inputStyles.LoginInput} placeholder="비밀번호 입력"></TextInput>
       </View>
 
-      {/*<View style={checkstyles.container}>
-        <View style={checkstyles.checkboxContainer}>
-          <Checkbox
-            status={checked ? 'checked' : 'unchecked'}
-            value={toggleCheckBox}
-            onValueChange={() => setToggleCheckBox(!checked)}
-            /> 
-            <Text style={StyleSheet.label}>자동로그인</Text>
-        </View>
-  </View>*/}
+      <View style={checkstyles.checkboxcontainer}>
+        <BouncyCheckbox
+          style={checkstyles.checkbox}
+          isChecked
+          size={25}
+          fillColor="#06ae7a"
+          unfillColor="#FFFFFF"
+          text="자동로그인"
+          textStyle={{
+            textDecorationLine: 'none'
+          }}       
+          />
+      </View>
 
       <TouchableOpacity style={buttonStyles.longButton} onPress={()=>navigation.navigate('걸어갈고양')}>
         <Text style={buttontextStyles.longText}>로그인</Text>
@@ -44,4 +47,4 @@ export default function LoginScreen({ navigation }) {
     
 
   );
-}
+};
