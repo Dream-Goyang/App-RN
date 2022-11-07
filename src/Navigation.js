@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer, StackActions} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import {Button} from 'react-native';
 
@@ -33,8 +33,10 @@ import ExerciseScreen from "./screens/Exercise";
 import MyWalkScreen from "./screens/MyWalk";
 import RankScreen from "./screens/Rank";
 import Logout from "./screens/Logout";
+import { NavigationActions } from 'react-navigation';
 
 const Tab = createStackNavigator();
+
 
 export default function App() {
 
