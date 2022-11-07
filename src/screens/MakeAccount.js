@@ -1,8 +1,9 @@
 import { ScrollView, View, SafeAreaView, TextInput,Image,TouchableOpacity, Text} from 'react-native';
 import { inputStyles } from '../components/Input';
 import {buttonStyles, buttontextStyles} from '../components/buttons';
-import {imageStyles,viewStyles,textStyles,acheckstyles} from '../components/MakeAccountStyle';
+import {viewStyles,textStyles,acheckstyles} from '../components/MakeAccountStyle';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
+import {checkstyles} from '../components/LoginStyle';
 
 export default function MakeAccountScreen({ navigation }) {
   return (
@@ -26,21 +27,52 @@ export default function MakeAccountScreen({ navigation }) {
         <View style={viewStyles.agreeline}></View>
 
         <ScrollView style={viewStyles.contents}>
-          <View style={viewStyles.checkone}>
-            <Text style={textStyles.agree}> ✓  1. 이용약관 동의 (필수)</Text>
-          </View>
-
-          <View style={viewStyles.checkone}>
-            <Text style={textStyles.agree}> ✓  2. 개인정보 수집 및 이용동의 (필수)</Text>
-          </View>
-
-          <View style={viewStyles.checkone}>
-            <Text style={textStyles.agree}> ✓  3. 만 14세 이상 이용자 (필수)</Text>
-          </View>
-
-          <View style={viewStyles.checkone}>
-            <Text style={textStyles.agree}> ✓  4. 서비스 마케팅 알림 동의 (필수)</Text>
-          </View>
+        <View style={checkstyles.checkboxcontainer}>
+        <BouncyCheckbox
+          style={checkstyles.accbox}
+          isChecked
+          size={25}
+          fillColor="#06ae7a"
+          unfillColor="#FFFFFF"
+          text="1. 이용약관 동의 (필수)"
+          textStyle={{
+            textDecorationLine: 'none'
+          }}       
+          />
+          <BouncyCheckbox
+          style={checkstyles.accbox}
+          isChecked
+          size={25}
+          fillColor="#06ae7a"
+          unfillColor="#FFFFFF"
+          text="2. 개인정보 수집 및 이용동의 (필수)"
+          textStyle={{
+            textDecorationLine: 'none'
+          }}       
+          />
+          <BouncyCheckbox
+          style={checkstyles.accbox}
+          isChecked
+          size={25}
+          fillColor="#06ae7a"
+          unfillColor="#FFFFFF"
+          text="3. 만 14세 이상 이용자 (필수)"
+          textStyle={{
+            textDecorationLine: 'none'
+          }}       
+          />
+          <BouncyCheckbox
+          style={checkstyles.accbox}
+          isChecked
+          size={25}
+          fillColor="#06ae7a"
+          unfillColor="#FFFFFF"
+          text="4. 서비스 마케팅 알림 동의 (필수)"
+          textStyle={{
+            textDecorationLine: 'none'
+          }}       
+          />
+      </View>
         </ScrollView>
       </View>
 
