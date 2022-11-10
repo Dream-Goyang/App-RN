@@ -10,7 +10,7 @@ const ExerciseMain = ({route,navigation}) => {
     const [point, setPoint] = useState(0);
 
     const PointHandler = () => {
-        setPoint(walked%100);
+        setPoint((walked-walked%100)/100);
     }
 
 
