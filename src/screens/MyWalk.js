@@ -8,8 +8,8 @@ const ExerciseMain = ({route,navigation}) => {
     const [point, setPoint] = useState(0);
 
     const PointHandler = () => {
-        setPoint(walked%100);
-        setMywalk(0);
+        setPoint((walked-(walked%10))/10); //아래
+        setMywalk(walked%10); //위
     }
 
 
