@@ -1,16 +1,15 @@
 import React, {useState} from "react";
-import { render } from "react-dom";
 import { SafeAreaView, View, Text, Image, TouchableOpacity} from "react-native";
-import {buttonStyles, titleStyles, imageStyles, HorizonLine, rankStyles} from '../components/ExerciseStyles'
-import PointChange from '../components/PointChange';
+import {buttonStyles, titleStyles, imageStyles, HorizonLine, rankStyles} from '../components/ExerciseStyles';
 
 const ExerciseMain = ({route,navigation}) => { 
     const { walked } = route.params;
-    var mypoint = 0;
+    const [mywalk,setMywalk]=useState(walked);
     const [point, setPoint] = useState(0);
 
     const PointHandler = () => {
-        setPoint((walked-walked%100)/100);
+        setPoint(walked%100);
+        setMywalk(0);
     }
 
 
@@ -70,7 +69,7 @@ const ExerciseMain = ({route,navigation}) => {
                 <View style={{marginTop:-45, marginRight:15}}>
                     <View style={rankStyles.subchart}>
                         <View style={{alignItems:'center', justifyContent:'center'}}>
-                            <Text style={rankStyles.mainText}>{walked}걸음</Text>
+                            <Text style={rankStyles.mainText}>{mywalk}걸음</Text>
                         </View>
                     </View>
                 </View>
