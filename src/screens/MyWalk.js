@@ -48,7 +48,7 @@ const ExerciseMain = ({route,navigation}) => {
                         </View>
                 </View>
                 
-                <View style={{marginTop:5, marginRight:-20}}>
+                <View style={{marginRight:-20}}>
                     <Text style={HorizonLine.divideline}></Text>
                 </View>
 
