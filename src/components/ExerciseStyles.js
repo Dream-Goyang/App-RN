@@ -81,9 +81,9 @@ export const titleStyles=StyleSheet.create({
         resizeMode:'stretch',
         alignItems: 'center',
         width:Width-50,
-        height: 70,
-        marginTop:50,
-        paddingTop:35,
+        height: 60,
+        marginTop:30,
+        paddingTop:30,
         backgroundColor:'#cdede3',
     },
 });
