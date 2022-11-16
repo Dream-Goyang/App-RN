@@ -1,10 +1,9 @@
 import { View, SafeAreaView,Image,Text,TouchableOpacity} from 'react-native';
 import {imageStyles,viewStyles,textStyles} from '../components/MainStyle';
 import {MainImages} from '../components/images';
-import {walked} from '../screens/Exercise'; 
 
 
-export default function MainScreen({ navigation }) {
+export default function MainScreen({ navigation },props) {
   return (
     <SafeAreaView style={viewStyles.whole}>
           <View style={viewStyles.profile}>
@@ -24,8 +23,8 @@ export default function MainScreen({ navigation }) {
           </View>
 
       <View style={viewStyles.todaywalk}>
-        <Text style={{fontSize:20, color:'white', paddingRight:55}}>✓  오늘의 걸음수</Text>
-        <Text style={{fontSize:20, color:'white', paddingLeft:5}}>{walked}걸음</Text>
+        <Text style={{fontSize:20, color:'white', paddingRight:55}}>✓ 오늘의 걸음수</Text>
+        <Text style={{fontSize:20, color:'white', paddingLeft:5}}>{props.howwalk} 걸음</Text>
       </View>
       
       <View style={viewStyles.lets}>

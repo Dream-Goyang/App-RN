@@ -4,7 +4,8 @@ import {StyleSheet,Text,View,Dimensions,Button,SafeAreaView,Image,TouchableOpaci
 import { Pedometer } from "expo-sensors";
 import CircularProgress from "react-native-circular-progress-indicator";
 import {buttonStyles, titleStyles, imageStyles, HorizonLine, dateStyles, circleStyles} from '../components/ExerciseStyles';
- 
+import MainScreen from "./Main";
+
 
 export default function App({navigation}) {
 
@@ -31,6 +32,7 @@ export default function App({navigation}) {
  subscribe = () => {
    const subscription = Pedometer.watchStepCount((result) => {
      SetStepCount(result.steps);
+     <MainScreen howwalk={StepCount}/>
    });
 
    Pedometer.isAvailableAsync().then(
@@ -96,8 +98,6 @@ export default function App({navigation}) {
  );
 
 }
-
- 
 
 const styles = StyleSheet.create({
     container: {
