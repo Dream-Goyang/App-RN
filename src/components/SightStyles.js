@@ -7,9 +7,9 @@ export const buttonStyles=StyleSheet.create({
     sightButton:{
         alignItems: 'center',
         justifyContent: 'center',
-        width:Width-230,
+        width:Width-200,
         height:65,
-        marginTop:60,
+        marginTop:20,
         marginRight:3,
         marginLeft:3,
         paddingTop:2,
@@ -47,12 +47,12 @@ export const titleStyles=StyleSheet.create({
 export const imageStyles=StyleSheet.create({
     character:{
         resizeMode:'cover',
-        width: Width-280,
+        width: Width-250,
         height: 100,
     },
     character2:{
-        resizeMode:'contain',
-        width: Width-350,
+        resizeMode:'cover',
+        width: Width-315,
         height: 80,
     },
     image:{
@@ -92,7 +92,7 @@ export const SightStyles=StyleSheet.create({
     rectangleN:{
         width: Width-50,
         padding: 16,
-        marginTop: 35,
+        marginTop: 15,
         marginBottom: 15,
         backgroundColor: '#E7E7E7',  
     },

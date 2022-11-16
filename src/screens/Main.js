@@ -3,7 +3,7 @@ import {imageStyles,viewStyles,textStyles} from '../components/MainStyle';
 import {MainImages} from '../components/images';
 
 
-export default function MainScreen({ navigation },props) {
+export default function MainScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
           <View style={viewStyles.profile}>
@@ -23,8 +23,6 @@ export default function MainScreen({ navigation },props) {
           </View>
 
       <View style={viewStyles.todaywalk}>
-        <Text style={{fontSize:20, color:'white', paddingRight:55}}>✓ 오늘의 걸음수</Text>
-        <Text style={{fontSize:20, color:'white', paddingLeft:5}}>{props.howwalk} 걸음</Text>
       </View>
       
       <View style={viewStyles.lets}>

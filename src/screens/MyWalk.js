@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { SafeAreaView, View, Text, Image, TouchableOpacity} from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import {buttonStyles, titleStyles, imageStyles, HorizonLine, rankStyles} from '../components/ExerciseStyles';
 
 const ExerciseMain = ({route,navigation}) => { 
@@ -39,6 +40,8 @@ const ExerciseMain = ({route,navigation}) => {
                 
             <Text style={HorizonLine.line}></Text>
 
+        <ScrollView>
+                
             <View style={{alignItems:'space-around', flexDirection: 'row'}}>
                 <View style={rankStyles.chart}>
 
@@ -52,7 +55,7 @@ const ExerciseMain = ({route,navigation}) => {
                     <Text style={HorizonLine.divideline}></Text>
                 </View>
 
-                <View style={{alignItems: 'flex-start', marginTop:-10, marginRight:268}}>
+                <View style={{alignItems: 'flex-start', marginTop:-10, marginRight:240}}>
                     <Text style={rankStyles.subText}>총 걸음 수</Text>
                 </View>
 
@@ -78,7 +81,7 @@ const ExerciseMain = ({route,navigation}) => {
                     <Text style={HorizonLine.divideline}></Text>
                 </View>
 
-                <View style={{alignItems: 'flex-start', marginTop:-10, marginRight: 268}}>
+                <View style={{alignItems: 'flex-start', marginTop:-10, marginRight: 240}}>
                     <Text style={rankStyles.subText}>총 포인트</Text>
                 </View>
 
@@ -103,8 +106,8 @@ const ExerciseMain = ({route,navigation}) => {
 
                 </View>
 
-            </View>  
-
+            </View> 
+        </ScrollView>
         </SafeAreaView>
     );
 };

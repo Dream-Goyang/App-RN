@@ -65,12 +65,7 @@ export default function App({navigation}) {
         <Text style={dateStyles.dateText}>DATE: {year}-{month + 1}-{date}</Text>
     </View>
 
-    <View style={{ flexDirection:"row",flex: 1, justifyContent: "center",alignSelf: "center",paddingTop:50}}>
-        <Image source={require('../../assets/winkcat.png')} style={imageStyles.winkcharacter}/>
-        <Text style={circleStyles.titleText}>이화냥님의 걸음 수</Text>
-    </View>
-
-       <View style={{ flex: 3,justifyContent: "center", alignSelf: "center"}}>
+       <View style={{ flex: 1, alignSelf: "center", justifyContent: "center"}}>
 
          <CircularProgress
           title={"걸음 걸으셨습니다"}
@@ -89,7 +84,7 @@ export default function App({navigation}) {
          ></CircularProgress>
        </View>
 
-        <View style={{marginTop:60}}>
+        <View style={{marginTop:10}}>
             <TouchableOpacity style={buttonStyles.exerciseButton} onPress={()=>navigation.navigate('나의통계',{walked:StepCount})}>     
             <Text style={buttonStyles.buttonText}>통계 보러가기</Text>
             </TouchableOpacity>

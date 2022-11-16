@@ -46,7 +46,7 @@ return (
 <NavigationContainer >
       <Tab.Navigator
       screenOptions={{
-        headerStyle: {height: 135, backgroundColor: '#06ae7a',},
+        headerStyle: {height: 100, backgroundColor: '#06ae7a',},
         headerTintColor: '#fff', headerTitleStyle: {fontWeight: 'bold', fontSize: 25,}, 
         headerLeftLabelVisible: false,
       }}>

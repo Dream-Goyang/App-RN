@@ -8,7 +8,9 @@ import {checkstyles} from '../components/LoginStyle';
 export default function MakeAccountScreen({ navigation }) {
   return (
     <SafeAreaView style={viewStyles.whole}>
-  
+      <ScrollView style={viewStyles.contents}>
+
+      
       <View style={viewStyles.contentscontainer}>
         <Text style={textStyles.title2}>이메일 회원가입</Text>
         <ScrollView style={viewStyles.contents}>
@@ -83,6 +85,7 @@ export default function MakeAccountScreen({ navigation }) {
         </TouchableOpacity>
       </View>
 
+      </ScrollView>
     </SafeAreaView>
 
     
