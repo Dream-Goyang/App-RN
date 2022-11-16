@@ -43,22 +43,16 @@ const ExerciseMain = ({route,navigation}) => {
                 <View style={rankStyles.chart}>
 
                 <View style={{alignItems:'space-around', flexDirection: 'row', marginTop:-50}}>
-                    <View style = {{marginLeft:0, marginRight:-15}}>
-                        <TouchableOpacity style={buttonStyles.checkButton} onPress={()=>navigation.navigate('나의통계')}>     
+                        <View style={titleStyles.walk}>     
                             <Text style={rankStyles.titleText}>나의 통계</Text>
-                        </TouchableOpacity>
-                    </View>
-
-                    <View style = {{marginLeft:15, justifyContent:'flex-end'}}>
-                        <TouchableOpacity style={buttonStyles.noncheckButton} onPress={()=>navigation.navigate('랭킹')}>     
-                            <View style = {{alignItems:'center'}}>
-                                <Text style={rankStyles.titleText}>랭킹</Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View>
+                        </View>
+                </View>
+                
+                <View style={{marginTop:5, marginRight:-20}}>
+                    <Text style={HorizonLine.divideline}></Text>
                 </View>
 
-                <View style={{alignItems: 'flex-start', marginTop:10, marginRight:265}}>
+                <View style={{alignItems: 'flex-start', marginTop:-10, marginRight:268}}>
                     <Text style={rankStyles.subText}>총 걸음 수</Text>
                 </View>
 

@@ -77,6 +77,15 @@ export const titleStyles=StyleSheet.create({
         letterSpacing: 0.25,
         color: 'black',
     },
+    walk:{
+        resizeMode:'stretch',
+        alignItems: 'center',
+        width:Width-50,
+        height: 70,
+        marginTop:50,
+        paddingTop:35,
+        backgroundColor:'#cdede3',
+    },
 });
 
 export const imageStyles=StyleSheet.create({
@@ -227,5 +236,5 @@ export const circleStyles=StyleSheet.create({
         letterSpacing: 0.25,
         color: 'black',
         marginBottom:8
-    }
+    },
 })
